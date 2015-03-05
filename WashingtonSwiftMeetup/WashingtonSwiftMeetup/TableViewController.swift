@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class TableViewController: UITableViewController {
     var entries = [String]()
@@ -60,7 +61,7 @@ class TableViewController: UITableViewController {
     
     func lookupGoogle()
     {
-        // Contents of json is in GoogleJSON in this project. This has been tested and will work with a valid Google API Key. 
+        // Contents of json is in GoogleJSON in this project. This has been tested and will work with a valid Google API Key.
         let GOOGLE_API_KEY = "<insert API Key>"
         let searchString = "Washington"
         var urlString = "https://maps.googleapis.com/maps/api/place/autocomplete/json?input=\(searchString)&sensor=true&types=(cities)&key=\(GOOGLE_API_KEY)"
@@ -81,6 +82,48 @@ class TableViewController: UITableViewController {
                 }
             })
         }
+    }
+    
+    func searchFourSquare()
+    {
+        let mapView = MKMapView() // This mapView will eventually be in the detail pane. 
+        let distance = MKCoordinateSpan(latitudeDelta: mapView.region.span.latitudeDelta, longitudeDelta: mapView.region.span.longitudeDelta).latitudeDelta
+        let centerLatitude = mapView.region.center.latitude; let centerLongitude = mapView.region.center.longitude
+        var term = "restaurant"
+        
+        let clientID = "<FourSquare Client ID>"
+        let clientSecret = "<FourSquare Secret>"
+        let urlString = "https://api.foursquare.com/v2/venues/explore?query=\(term)&ll=\(centerLatitude),\(centerLongitude)&client_id=\(clientID)&client_secret=\(clientSecret)&intent=browse&radius=800&v=20150225";
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: urlString)!)
+        
+        NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue(), completionHandler: { (response:NSURLResponse!, data:NSData!, error:NSError!) -> Void in
+            if error == nil {
+                var err:NSError?
+                let httpResponse = response as NSHTTPURLResponse!
+                
+                if httpResponse.statusCode == 200 {
+                    if var json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error:&err) as? NSDictionary {
+                        if var response = json.valueForKey("response") as? NSDictionary {
+                            if var groups = response.valueForKey("groups") as? [NSDictionary] {
+                                for group in groups as [NSDictionary] {
+                                    if var items = group.valueForKey("items") as? [NSDictionary] {
+                                        for item in items as [NSDictionary] {
+                                            if var venue = item.valueForKey("venue") as? NSDictionary {
+                                                println(venue.valueForKey("name")!)
+                                                if var price = venue.valueForKey("price") as? NSDictionary {
+                                                    println(price.valueForKey("tier")!)
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        })
     }
 
 }
