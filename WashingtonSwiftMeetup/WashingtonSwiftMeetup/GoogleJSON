@@ -1,0 +1,160 @@
+{
+predictions =     (
+{
+description = "Washington, DC, United States";
+id = 49c0cb4aa94c88be75611d5c80f29cf05d55a340;
+"matched_substrings" =             (
+{
+length = 10;
+offset = 0;
+}
+);
+"place_id" = "ChIJW-T2Wt7Gt4kRKl2I1CJFUsI";
+reference = "CkQ1AAAAYypkPTw8tlgif285CqrJWkWUw8vNYotrvzY-mQcr1RPnsxk-6I1Nk2UrYiUwP_lepz7bBeyCsho_cDPc4LEQtRIQE8i7rxAnOXLTNJgDcO0TdRoU8ao2vjdLjO-dRfLRWF3ibO-uZdo";
+terms =             (
+{
+offset = 0;
+value = Washington;
+},
+{
+offset = 12;
+value = DC;
+},
+{
+offset = 16;
+value = "United States";
+}
+);
+types =             (
+locality,
+political,
+geocode
+);
+},
+{
+description = "Washington, MI, United States";
+id = 6da64a558e941465883e5398b567f47b027234b3;
+"matched_substrings" =             (
+{
+length = 10;
+offset = 0;
+}
+);
+"place_id" = "ChIJM2KvWIfmJIgRkP_-1U437Z8";
+reference = "CkQ1AAAAwOsvyV4V5iJkPjMd74nmjC6To4yTFgB44cpz5UXI2JgKfShBx9i2xJJK6c7soZZ53nBiTyHsspYs8j-1DgqsBhIQXGAgaau9msHBxdMOq2kWthoUGhNBX3gyWCEFBf-OG3J0vbyD-cg";
+terms =             (
+{
+offset = 0;
+value = Washington;
+},
+{
+offset = 12;
+value = MI;
+},
+{
+offset = 16;
+value = "United States";
+}
+);
+types =             (
+locality,
+political,
+geocode
+);
+},
+{
+description = "Washington, WV, United States";
+id = ecf9a0bdd7c5072ed7d0c7c39a68f91652b3cc8c;
+"matched_substrings" =             (
+{
+length = 10;
+offset = 0;
+}
+);
+"place_id" = ChIJmVYtjW1PSIgR0MWRd5Rd9wM;
+reference = "CkQ1AAAAUmO2_Vgm9wIhEPxcQ2umERg5BgRtNb5qlyn_jP_IxiYQMpRta0w0WDaFhJbo7WAgv-cVIPNEVWvTV-xJ6hbvxBIQk4aH7uzRGjMf_7HTfkOoihoU7B2VW4o8VtlrXaqErDCmxeLdxKY";
+terms =             (
+{
+offset = 0;
+value = Washington;
+},
+{
+offset = 12;
+value = WV;
+},
+{
+offset = 16;
+value = "United States";
+}
+);
+types =             (
+locality,
+political,
+geocode
+);
+},
+{
+description = "Washington, CT, United States";
+id = 42a0d28aed2c7a52a7fc14207a37a5059c490ab1;
+"matched_substrings" =             (
+{
+length = 10;
+offset = 0;
+}
+);
+"place_id" = ChIJnQ5RkSaN54kREMD9AwWKNBY;
+reference = "CkQ1AAAA9T4uvWRhtAJ0MsYEwHFv8wD8BQbR9wXwsrrHYbocO8MtcN1n3KAvlbNplC1mP0-HduVxlVCBaqWfBcYfKRF9thIQdO8EOShwqjROHBRnuYWDLhoUBlKA5u9w-LeFLkzTGmgPmrqmHOY";
+terms =             (
+{
+offset = 0;
+value = Washington;
+},
+{
+offset = 12;
+value = CT;
+},
+{
+offset = 16;
+value = "United States";
+}
+);
+types =             (
+locality,
+political,
+geocode
+);
+},
+{
+description = "Washington, PA, United States";
+id = 395ab72b3623a5e1fcd635aa8d141296d5eee412;
+"matched_substrings" =             (
+{
+length = 10;
+offset = 0;
+}
+);
+"place_id" = ChIJMZYluYWtNYgRL9Pm0uxEhgQ;
+reference = "CkQ1AAAAk7yumzjjmWsa4XyrVWBkM-s6vvDGal2Um7_lAAA7ZYvDoBoDEXcJA4Fc3y8wB32L48r_2saJRCreY_9_JCNYzRIQ94UTFNBLJkejpthpSD_pNBoUuaElFrUuPOrfBTTtptejXL0La_M";
+terms =             (
+{
+offset = 0;
+value = Washington;
+},
+{
+offset = 12;
+value = PA;
+},
+{
+offset = 16;
+value = "United States";
+}
+);
+types =             (
+locality,
+political,
+geocode
+);
+}
+);
+status = OK;
+}

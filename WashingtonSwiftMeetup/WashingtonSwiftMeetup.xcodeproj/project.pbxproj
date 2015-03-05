@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		9BCF66DB1AA8C07200C844A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66DA1AA8C07200C844A4 /* AppDelegate.swift */; };
 		9BCF66DE1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66DC1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld */; };
-		9BCF66E01AA8C07200C844A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66DF1AA8C07200C844A4 /* ViewController.swift */; };
-		9BCF66E31AA8C07200C844A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCF66E11AA8C07200C844A4 /* Main.storyboard */; };
+		9BCF66E01AA8C07200C844A4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66DF1AA8C07200C844A4 /* TableViewController.swift */; };
+		9BCF66E31AA8C07200C844A4 /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BCF66E11AA8C07200C844A4 /* iPad.storyboard */; };
 		9BCF66E51AA8C07200C844A4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BCF66E41AA8C07200C844A4 /* Images.xcassets */; };
 		9BCF66E81AA8C07200C844A4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BCF66E61AA8C07200C844A4 /* LaunchScreen.xib */; };
 		9BCF66F41AA8C07200C844A4 /* WashingtonSwiftMeetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66F31AA8C07200C844A4 /* WashingtonSwiftMeetupTests.swift */; };
+		9BCF66FE1AA8E06F00C844A4 /* GoogleJSON in Resources */ = {isa = PBXBuildFile; fileRef = 9BCF66FD1AA8E06F00C844A4 /* GoogleJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +32,14 @@
 		9BCF66D91AA8C07200C844A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BCF66DA1AA8C07200C844A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BCF66DD1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WashingtonSwiftMeetup.xcdatamodel; sourceTree = "<group>"; };
-		9BCF66DF1AA8C07200C844A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9BCF66E21AA8C07200C844A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BCF66DF1AA8C07200C844A4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		9BCF66E21AA8C07200C844A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPad.storyboard; sourceTree = "<group>"; };
 		9BCF66E41AA8C07200C844A4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9BCF66E71AA8C07200C844A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9BCF66ED1AA8C07200C844A4 /* WashingtonSwiftMeetupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WashingtonSwiftMeetupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCF66F21AA8C07200C844A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BCF66F31AA8C07200C844A4 /* WashingtonSwiftMeetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WashingtonSwiftMeetupTests.swift; sourceTree = "<group>"; };
+		9BCF66FD1AA8E06F00C844A4 /* GoogleJSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GoogleJSON; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,12 +82,13 @@
 			isa = PBXGroup;
 			children = (
 				9BCF66DA1AA8C07200C844A4 /* AppDelegate.swift */,
-				9BCF66DF1AA8C07200C844A4 /* ViewController.swift */,
-				9BCF66E11AA8C07200C844A4 /* Main.storyboard */,
+				9BCF66DF1AA8C07200C844A4 /* TableViewController.swift */,
+				9BCF66E11AA8C07200C844A4 /* iPad.storyboard */,
 				9BCF66E41AA8C07200C844A4 /* Images.xcassets */,
 				9BCF66E61AA8C07200C844A4 /* LaunchScreen.xib */,
 				9BCF66DC1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld */,
 				9BCF66D81AA8C07100C844A4 /* Supporting Files */,
+				9BCF66FD1AA8E06F00C844A4 /* GoogleJSON */,
 			);
 			path = WashingtonSwiftMeetup;
 			sourceTree = "<group>";
@@ -195,7 +198,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCF66E31AA8C07200C844A4 /* Main.storyboard in Resources */,
+				9BCF66E31AA8C07200C844A4 /* iPad.storyboard in Resources */,
+				9BCF66FE1AA8E06F00C844A4 /* GoogleJSON in Resources */,
 				9BCF66E81AA8C07200C844A4 /* LaunchScreen.xib in Resources */,
 				9BCF66E51AA8C07200C844A4 /* Images.xcassets in Resources */,
 			);
@@ -215,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BCF66E01AA8C07200C844A4 /* ViewController.swift in Sources */,
+				9BCF66E01AA8C07200C844A4 /* TableViewController.swift in Sources */,
 				9BCF66DB1AA8C07200C844A4 /* AppDelegate.swift in Sources */,
 				9BCF66DE1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld in Sources */,
 			);
@@ -240,12 +244,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9BCF66E11AA8C07200C844A4 /* Main.storyboard */ = {
+		9BCF66E11AA8C07200C844A4 /* iPad.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9BCF66E21AA8C07200C844A4 /* Base */,
 			);
-			name = Main.storyboard;
+			name = iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		9BCF66E61AA8C07200C844A4 /* LaunchScreen.xib */ = {
@@ -411,6 +415,7 @@
 				9BCF66F91AA8C07200C844A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BCF66FA1AA8C07200C844A4 /* Build configuration list for PBXNativeTarget "WashingtonSwiftMeetupTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				9BCF66FC1AA8C07200C844A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
