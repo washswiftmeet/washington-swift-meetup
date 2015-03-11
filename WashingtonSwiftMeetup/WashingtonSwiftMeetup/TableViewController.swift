@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  TableViewController.swift
 //  WashingtonSwiftMeetup
 //
 //  Created by Cameron Conway on 3/5/15.
@@ -11,6 +11,7 @@ import MapKit
 
 class TableViewController: UITableViewController {
     var entries = [String]()
+//    var detailViewController:DetailViewController!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,16 @@ class TableViewController: UITableViewController {
         entries.append("Entry 3")
         entries.append("Entry 4")
         entries.append("Entry 5")
+        
+//        detailViewController = UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad ? splitViewController!.viewControllers[1] as DetailViewController : tabBarController!.viewControllers?[2] as DetailViewController
     }
+
+//    This func will go in DetailViewController.
+//
+//    func loadForm(entry:[String:AnyObject?])
+//    {
+//        
+//    }
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int
     {
