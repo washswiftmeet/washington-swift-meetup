@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18C7D0961AB8E69400C9F641 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C7D0951AB8E69400C9F641 /* iPhone.storyboard */; };
+		18C7D0981AB8EE4C00C9F641 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C7D0971AB8EE4C00C9F641 /* Detail.swift */; };
 		9BCF66DB1AA8C07200C844A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66DA1AA8C07200C844A4 /* AppDelegate.swift */; };
 		9BCF66DE1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66DC1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld */; };
 		9BCF66E01AA8C07200C844A4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCF66DF1AA8C07200C844A4 /* TableViewController.swift */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18C7D0951AB8E69400C9F641 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		18C7D0971AB8EE4C00C9F641 /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
 		9BCF66D51AA8C07100C844A4 /* WashingtonSwiftMeetup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WashingtonSwiftMeetup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BCF66D91AA8C07200C844A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BCF66DA1AA8C07200C844A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				9BCF66DA1AA8C07200C844A4 /* AppDelegate.swift */,
 				9BCF66DF1AA8C07200C844A4 /* TableViewController.swift */,
 				9BCF66E11AA8C07200C844A4 /* iPad.storyboard */,
+				18C7D0951AB8E69400C9F641 /* iPhone.storyboard */,
+				18C7D0971AB8EE4C00C9F641 /* Detail.swift */,
 				9BCF66E41AA8C07200C844A4 /* Images.xcassets */,
 				9BCF66E61AA8C07200C844A4 /* LaunchScreen.xib */,
 				9BCF66DC1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld */,
@@ -202,6 +208,7 @@
 				9BCF66FE1AA8E06F00C844A4 /* GoogleJSON in Resources */,
 				9BCF66E81AA8C07200C844A4 /* LaunchScreen.xib in Resources */,
 				9BCF66E51AA8C07200C844A4 /* Images.xcassets in Resources */,
+				18C7D0961AB8E69400C9F641 /* iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +228,7 @@
 			files = (
 				9BCF66E01AA8C07200C844A4 /* TableViewController.swift in Sources */,
 				9BCF66DB1AA8C07200C844A4 /* AppDelegate.swift in Sources */,
+				18C7D0981AB8EE4C00C9F641 /* Detail.swift in Sources */,
 				9BCF66DE1AA8C07200C844A4 /* WashingtonSwiftMeetup.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

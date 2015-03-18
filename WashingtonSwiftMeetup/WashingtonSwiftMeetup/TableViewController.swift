@@ -11,6 +11,7 @@ import MapKit
 
 class TableViewController: UITableViewController {
     var entries = [String]()
+    var selected:[String:String]?
 //    var detailViewController:DetailViewController!
 
     override func viewDidLoad() {
@@ -66,7 +67,14 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        println("User just tapped on a row")
+        selected = ["Name":entries[indexPath.row]]
+        performSegueWithIdentifier("Detail", sender: self)
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let destinationDetail = segue.destinationViewController as? Detail
+        destinationDetail?.delegate = self
+        destinationDetail?.address = selected  
     }
     
     func lookupGoogle()
